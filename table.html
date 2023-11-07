@@ -8,5 +8,134 @@
 </head>
 
 <body>
+	<a href='main.html'>
+		<h3>
+			Топ популярных криптовалют
+		</h3>
+	</a>
 
+	<a href='table.html'>
+		<h2>
+			Список популярных криптовалют
+		</h2>
+	</a>
+
+	<hr>
+
+	<details>
+		<summary>График</summary>
+
+		<h3>Значение по оси OX</h3>
+		<ul>
+			<li>
+				<input type="radio">Тип
+			</li>
+			<li>
+				<input type="radio">Страна
+			</li>
+			<li>
+				<input type="radio">Год
+			</li>
+		</ul>
+
+		<h3>Результат</h3>
+		<ul>
+			<li>
+				<input type="checkbox">Тип
+			</li>
+			<li>
+				<input type="checkbox">Страна
+			</li>
+			<li>
+				<input type="checkbox">Год
+			</li>
+		</ul>
+
+		<input type="submit" value='Построить'>
+
+		<p>Тут график</p>
+
+	</details>
+
+
+	<details>
+		<summary>Фильтр</summary>
+
+		<form>
+			<p>
+				<label>
+					<i>Название:</i>
+				</label><br>
+				<input type=text id="name">
+			</p>
+
+			<p>
+				<label>
+					<i>Цена от :</i>
+				</label><br>
+				<input type=text id="min-price">
+			</p>
+
+			<p>
+				<label>
+					<i>Цена до :</i>
+				</label><br>
+				<input type=text id="max-price">
+			</p>
+
+			<p>
+				<label>
+					<i>Рыночная капитализация от :</i>
+				</label><br>
+				<input type=text id="max-price">
+			</p>
+
+			<p>
+				<label>
+					<i>Рыночная капитализация до:</i>
+				</label><br>
+				<input type=text id="max-price">
+			</p>
+
+			<input type="submit" value='Найти'>
+		</form>
+	</details>
+
+	<details>
+		<summary>Сортировка</summary>
+		<p>
+			По цене:
+			<select name="sort-by-price" id="">
+				<option value="yes">Да</option>
+				<option value="no">Нет</option>
+			</select>
+			По убыванию?
+			<input type="checkbox">
+		</p>
+
+		<p>
+			По рыночной капитализации:
+			<select name="sort-by-capitalization" id="">
+				<option value="yes">Да</option>
+				<option value="no">Нет</option>
+			</select>
+			По убыванию?
+			<input type="checkbox">
+		</p>
+
+		<p>
+			По алфавиту:
+			<select name="sort-by-alphabet" id="">
+				<option value="yes">Да</option>
+				<option value="no">Нет</option>
+			</select>
+			В обратном порядке?
+			<input type="checkbox">
+		</p>
+
+		<input type="submit" value='Сортировать'>
+		</form>
+	</details>
 </body>
+
+</html>
