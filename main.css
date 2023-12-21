@@ -1,0 +1,152 @@
+html,
+body {
+	margin: 20px auto;
+	padding: 0;
+	width: 80%;
+}
+
+header {
+	background-color: rgba(177, 172, 172, 0.58);
+	background: url('https://klike.net/uploads/posts/2022-11/1668846723_3-39.jpg');
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+.name {
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.menu {
+	padding: 15px;
+	color: white;
+	width: max-content;
+
+	margin: 0 auto;
+}
+
+.menu {
+	padding: 10px;
+	padding-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu .block {
+	padding: 7px;
+}
+
+.menu .active {
+	background-color: rgba(120, 119, 119, 0.272);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu .block {
+	display: inline-block;
+	border: soid red;
+}
+
+.content-bottom {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.content-bottom .block {
+	overflow: hidden;
+	border: 1px solid grey;
+	padding: 5px;
+}
+
+.content-bottom .block .top {
+	display: flex;
+	height: 40px;
+}
+
+.content-bottom .block .top img {
+	flex: 0.5;
+}
+
+.content-bottom .block .top h2 {
+	flex: 0.5;
+	padding-left: 5px;
+	margin: 0;
+}
+
+.content-bottom .block .bottom {
+	text-align: justify;
+}
+
+.content-bottom img {
+	width: 100%;
+	height: 100%;
+}
+
+.content-top {
+	display: flex;
+	gap: 20px;
+	padding-bottom: 20px;
+}
+
+.left {
+	width: 60%;
+}
+
+.right {
+	width: 40%;
+}
+
+.content-top .block img {
+	width: 100%;
+	height: 60px;
+}
+
+.content-top .block h2 {
+	text-align: center;
+	margin: 0;
+}
+
+.content-top .block bottom {
+}
+
+@media screen and (max-width: 600px) {
+	.menu {
+		width: 100%;
+	}
+	.menu .block {
+		width: 100%;
+	}
+
+	header {
+		background-color: none;
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.name {
+		display: none;
+	}
+
+	.content-top {
+		flex-direction: column;
+	}
+
+	.left {
+		width: 100%;
+	}
+
+	.right {
+		width: 100%;
+	}
+
+	.content-bottom {
+		display: flex;
+		flex-direction: column;
+	}
+}
